@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div align="center">
+      <h1>Product Parameters</h1>
+    </div>
+    <div class="row" class="tab">
+      <div class="col-75">
+        <div class="container">
+          <form id="regForm" action="/action_page.php">
+            <div class="row">
+              <div class="col-50">
+                <div class="row"></div>
+                <div class="row">
+                  <div class="col-50">
+                    <label for="email"
+                      ><i class="ap ap-user-email"></i> Apigee Product
+                      Name</label
+                    >
+                    <input type="text" id="email" name="email" />
+                  </div>
+                  <div class="col-50">
+                    <label for="gateway"
+                      ><i class="ap ap-gateway"></i> Apigee Product Business
+                      Unit</label
+                    >
+                    <input type="text" id="email" name="email" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">Apigee Product SNOW ID</label>
+                    <input type="text" id="state" name="state" />
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Apigee Environment</label>
+                    <input type="text" id="zip" name="zip" />
+                  </div>
+                </div>
+                <label for="zip">Apigee Product Display Name</label>
+                <input type="text" id="zip" name="zip" />
+                <label for="zip">Apigee Product Description</label>
+                <input type="text" id="zip" name="zip" />
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">Apigee Product Approval Type</label>
+                    <select>
+                      <option value="ecc">Auto</option>
+                      <option value="fbi">Manual</option>
+                    </select>
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Apigee Product Quota</label><br />
+                    <input type="text" id="zip" name="zip" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-50">
+                <div>
+                  <label for="cname">Apigee Organization</label><br /><br />
+                  <label class="checkbox-inline">
+                    <input
+                      type="checkbox"
+                      name="fidelity-prod"
+                      value="fidelity-prod"
+                    />Fidelity Prod
+                  </label>
+                  <label class="checkbox-inline">
+                    <input
+                      type="checkbox"
+                      name="fidelity-np"
+                      value="fidelity-np"
+                    />Fidelity Non Prod
+                  </label>
+                </div>
+                <br />
+                <div>
+                  <label for="cname">Apigee Environments</label><br /><br />
+                  <label class="checkbox-inline">
+                    <input
+                      type="checkbox"
+                      name="fidelity-prod"
+                      value="fidelity-prod"
+                    />Stage
+                  </label>
+                  <label class="checkbox-inline">
+                    <input
+                      type="checkbox"
+                      name="fidelity-np"
+                      value="fidelity-np"
+                    />Dev
+                  </label>
+                </div>
+                <br />
+                <label for="ccnum">Apigee Targer URL</label>
+                <input type="text" id="ccnum" name="cardnumber" />
+                <label for="ccnum">Apigee Product Business Unit</label>
+                <input type="text" id="ccnum" name="cardnumber" />
+                <label for="ccnum">Apigee Product Name</label>
+                <input type="text" id="ccnum" name="cardnumber" />
+                <label for="ccnum">Apigee Product Version</label>
+                <input type="text" id="ccnum" name="cardnumber" />
+              </div>
+            </div>
+          </form>
+          <!-- <input type="button" value="Next" class="btn btn-success btn-lg" /> -->
+          <a href="proxy/proxy.html" class="btn btn-sucess btn-lg">NEXT</a>
+        </div>
+      </div>
+    </div>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
