@@ -24,66 +24,67 @@
     <div class="row" class="tab">
       <div class="col-75">
         <div class="container">
-          <form id="regForm" action="/action_page.php">
+          <form id="regForm">
             <div class="row">
               <div class="col-50">
-                <div class="row"></div>
                 <div class="row">
                   <div class="col-50">
-                    <label for="email"
-                      ><i class="ap ap-user-email"></i> Apigee Product
-                      Name</label
-                    >
-                    <input type="text" id="email" name="email" />
+                    <label for="product"> Apigee Product Name</label>
+                    <input type="text" />
                   </div>
                   <div class="col-50">
-                    <label for="gateway"
-                      ><i class="ap ap-gateway"></i> Apigee Product Business
-                      Unit</label
+                    <label for="business-unit">
+                      Apigee Product Business Unit</label
                     >
-                    <input type="text" id="email" name="email" />
+                    <input type="text" />
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-50">
-                    <label for="state">Apigee Product SNOW ID</label>
-                    <input type="text" id="state" name="state" />
+                    <label for="product-id">Apigee Product SNOW ID</label>
+                    <input type="text" />
                   </div>
                   <div class="col-50">
-                    <label for="zip">Apigee Environment</label>
-                    <input type="text" id="zip" name="zip" />
+                    <label for="environment">Apigee Environment</label>
+                    <input type="text" id="environment" />
                   </div>
                 </div>
-                <label for="zip">Apigee Product Display Name</label>
-                <input type="text" id="zip" name="zip" />
-                <label for="zip">Apigee Product Description</label>
-                <input type="text" id="zip" name="zip" />
+                <label for="display-name">Apigee Product Display Name</label>
+                <input type="text" id="display-name" name="display-name" />
+                <label for="product-description"
+                  >Apigee Product Description</label
+                >
+                <input
+                  type="text"
+                  id="productDescription"
+                  name="product-description"
+                />
                 <div class="row">
                   <div class="col-50">
-                    <label for="state">Apigee Product Approval Type</label>
+                    <label for="aproval">Apigee Product Approval Type</label>
                     <select>
-                      <option value="ecc">Auto</option>
-                      <option value="fbi">Manual</option>
+                      <option value="auto">Auto</option>
+                      <option value="manual">Manual</option>
                     </select>
                   </div>
                   <div class="col-50">
-                    <label for="zip">Apigee Product Quota</label><br />
-                    <input type="text" id="zip" name="zip" />
+                    <label for="quota">Apigee Product Quota</label><br />
+                    <input type="text" id="quota" name="quota" />
                   </div>
                 </div>
               </div>
 
               <div class="col-50">
                 <div>
-                  <label for="cname">Apigee Organization</label><br /><br />
-                  <label class="checkbox-inline">
+                  <label for="fidelity-prod">Apigee Organization</label><br />
+                  <label class="checkbox-inline" for="fidelity-prod">
                     <input
                       type="checkbox"
                       name="fidelity-prod"
                       value="fidelity-prod"
                     />Fidelity Prod
                   </label>
-                  <label class="checkbox-inline">
+                  <label class="checkbox-inline" for="fidelity-np">
                     <input
                       type="checkbox"
                       name="fidelity-np"
@@ -93,7 +94,8 @@
                 </div>
                 <br />
                 <div>
-                  <label for="cname">Apigee Environments</label><br /><br />
+                  <label for="environments">Apigee Environments</label
+                  ><br /><br />
                   <label class="checkbox-inline">
                     <input
                       type="checkbox"
@@ -110,14 +112,14 @@
                   </label>
                 </div>
                 <br />
-                <label for="ccnum">Apigee Targer URL</label>
-                <input type="text" id="ccnum" name="cardnumber" />
-                <label for="ccnum">Apigee Product Business Unit</label>
-                <input type="text" id="ccnum" name="cardnumber" />
-                <label for="ccnum">Apigee Product Name</label>
-                <input type="text" id="ccnum" name="cardnumber" />
-                <label for="ccnum">Apigee Product Version</label>
-                <input type="text" id="ccnum" name="cardnumber" />
+                <label for="url">Apigee Targer URL</label>
+                <input type="text" id="url" name="url" />
+                <label for="pbu">Apigee Product Business Unit</label>
+                <input type="text" id="pbu" name="pbu" />
+                <label for="apn">Apigee Product Name</label>
+                <input type="text" id="apn" name="apn" />
+                <label for="apv">Apigee Product Version</label>
+                <input type="text" id="apv" name="apv" />
               </div>
             </div>
           </form>
@@ -126,6 +128,6 @@
         </div>
       </div>
     </div>
-    <script src="JS/main.js"></script>
+    <!-- <script src="JS/main.js"></script> -->
   </body>
 </html>
